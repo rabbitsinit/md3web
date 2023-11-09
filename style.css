@@ -608,3 +608,24 @@ h1,h2,h3,h4,h5,h6,p {
 h1.primary,h2.primary,h3.primary,h4.primary,h5.primary,h6.primary,p.primary {
 	color: var(--md-sys-color-primary);
 }
+
+/* Cards */
+div.card {
+	border-radius: 20pt;
+	padding: 30pt 30pt 30pt 30pt;
+}
+div.card.display-inlineblock {
+	vertical-align: top;
+	margin-right: 20pt;
+}
+
+/* Cards colors */
+div.card.primary {
+	background-color: var(--md-ref-palette-primary15);
+}
+div.card.secondary {
+	background-color: var(--md-ref-palette-secondary15);
+}
+div.card.tertiary {
+	background-color: var(--md-ref-palette-tertiary15);
+}
