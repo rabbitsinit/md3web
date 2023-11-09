@@ -613,6 +613,7 @@ h1.primary,h2.primary,h3.primary,h4.primary,h5.primary,h6.primary,p.primary {
 div.card {
 	border-radius: 20pt;
 	padding: 30pt 30pt 30pt 30pt;
+	margin: 0 0 20pt 0;
 }
 div.card.display-inlineblock {
 	vertical-align: top;
