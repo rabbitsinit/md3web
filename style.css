@@ -405,6 +405,7 @@ body {
 	margin:none;
 	padding: none;
 	background: var(--md-sys-color-background); }
+
 @font-face { font-family: GSRegular;
 	src: url(fonts/GoogleSans-Regular.ttf); }
 @font-face { font-family: GSMedium;
@@ -429,7 +430,7 @@ div.header {
 div.container {
 	padding-left: 5%;
 	padding-right: 5%;
-	padding-top: 5%;
+	padding-top: 3%;
 	display: block; }
 
 /* Filled button behavior */
@@ -482,6 +483,39 @@ a.tertiary:visited {
 a.tertiary.animated:hover {
 	background: var(--md-sys-color-tertiary-container);
 	color: var(--md-sys-color-on-tertiary-container); }
+
+/* Primary tonal button colors */
+a.primary.tonal {
+	background: var(--md-sys-color-primary-container);
+	color: var(--md-sys-color-on-primary-container); }
+a.primary.tonal:visited {
+	background: var(--md-sys-color-primary-container);
+	color: var(--md-sys-color-on-primary-container); }
+a.primary.tonal.animated:hover {
+	background: var(--md-sys-color-primary);
+	color: var(--md-sys-color-on-primary); }
+
+/* Secondary tonal button colors */
+a.secondary.tonal {
+	background: var(--md-sys-color-secondary-container);
+	color: var(--md-sys-color-on-secondary-container); }
+a.secondary.tonal:visited {
+	background: var(--md-sys-color-secondary-container);
+	color: var(--md-sys-color-on-secondary-container); }
+a.secondary.tonal.animated:hover {
+	background: var(--md-sys-color-secondary);
+	color: var(--md-sys-color-on-secondary); }
+
+/* Tertiary tonal button colors */
+a.tertiary.tonal {
+	background: var(--md-sys-color-tertiary-container);
+	color: var(--md-sys-color-on-tertiary-container); }
+a.tertiary.tonal:visited {
+	background: var(--md-sys-color-tertiary-container);
+	color: var(--md-sys-color-on-tertiary-container); }
+a.tertiary.tonal.animated:hover {
+	background: var(--md-sys-color-tertiary);
+	color: var(--md-sys-color-on-tertiary); }
 
 /* Switch behavior */
 input.switch[type="checkbox"] {
@@ -547,7 +581,7 @@ input.switch.tertiary:checked[type="checkbox"] {
 input.switch.tertiary:checked[type="checkbox"]:before {
 	background: var(--md-sys-color-on-tertiary); }
 
-/* Margin explanation */
+/* Margin definition */
 .mt-10 {
 	margin-top: 10pt; }
 .mr-10 {
@@ -555,7 +589,7 @@ input.switch.tertiary:checked[type="checkbox"]:before {
 .mt-0 {
 	margin-top: 0; }
 
-/* Display versions explanation */
+/* Display versions definition */
 .display-inline {
 	display: inline; }
 .display-inlineblock {
@@ -569,4 +603,8 @@ input.switch.tertiary:checked[type="checkbox"]:before {
 h1,h2,h3,h4,h5,h6,p {
 	font-family: GSRegular;
 	font-weight: lighter;
-	color: var(--md-sys-color-primary); }
+	color: var(--md-sys-color-on-background); }
+
+h1.primary,h2.primary,h3.primary,h4.primary,h5.primary,h6.primary,p.primary {
+	color: var(--md-sys-color-primary);
+}
